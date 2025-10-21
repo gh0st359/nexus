@@ -1,0 +1,367 @@
+/**
+ * Probabilistic Prediction Styles
+ */
+
+.probabilistic-prediction {
+  max-width: 1000px;
+}
+
+.prediction-header {
+  margin-bottom: 30px;
+}
+
+.prediction-header h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.prediction-subtitle {
+  color: #8b8b9a;
+  font-size: 14px;
+}
+
+.prediction-section {
+  background-color: #16213e;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #2a2a3e;
+}
+
+.prediction-timeframe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.prediction-timeframe h4 {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.timeframe-badge {
+  background-color: #4a9eff;
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.prediction-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prediction-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.direction-indicator {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.direction-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.direction-badge.bullish {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.direction-badge.bearish {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #f44336;
+  border: 2px solid #f44336;
+}
+
+.direction-badge.neutral {
+  background-color: rgba(255, 165, 0, 0.2);
+  color: #ffa500;
+  border: 2px solid #ffa500;
+}
+
+.probability-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.probability-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4a9eff;
+}
+
+.probability-label {
+  font-size: 13px;
+  color: #8b8b9a;
+  margin-top: 5px;
+}
+
+.confidence-indicator {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.confidence-label {
+  font-size: 13px;
+  color: #8b8b9a;
+  margin-bottom: 10px;
+}
+
+.confidence-bar {
+  height: 30px;
+  background-color: #2a2a3e;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  transition: width 0.5s ease;
+}
+
+.confidence-bar.high .confidence-fill {
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+}
+
+.confidence-bar.medium .confidence-fill {
+  background: linear-gradient(90deg, #ffa500, #ffb732);
+}
+
+.confidence-bar.low .confidence-fill {
+  background: linear-gradient(90deg, #f44336, #ff6b6b);
+}
+
+.confidence-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.confidence-label-text {
+  font-size: 13px;
+  color: #8b8b9a;
+  margin-left: 8px;
+}
+
+.price-range-prediction {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.price-range-prediction h5 {
+  font-size: 14px;
+  color: #8b8b9a;
+  margin-bottom: 15px;
+}
+
+.price-range-display {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.price-range-item {
+  text-align: center;
+}
+
+.price-range-item.most-likely {
+  transform: scale(1.1);
+}
+
+.range-label {
+  display: block;
+  font-size: 12px;
+  color: #8b8b9a;
+  margin-bottom: 8px;
+}
+
+.range-value {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.range-value.low {
+  color: #f44336;
+}
+
+.range-value.high {
+  color: #4caf50;
+}
+
+.range-visualization {
+  margin-top: 15px;
+}
+
+.range-bar {
+  height: 8px;
+  background: linear-gradient(90deg, #f44336, #ffa500, #4caf50);
+  border-radius: 4px;
+  position: relative;
+}
+
+.range-bar.wider {
+  background: linear-gradient(90deg, #ff6b6b, #f44336, #ffa500, #4caf50, #8bc34a);
+}
+
+.range-center-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.historical-accuracy-section {
+  background-color: #2a2a1e;
+  border: 1px solid #ffa500;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.historical-accuracy-section h4 {
+  color: #ffa500;
+  margin-bottom: 15px;
+}
+
+.accuracy-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accuracy-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accuracy-note {
+  font-size: 13px;
+  color: #d0d0a0;
+  font-style: italic;
+}
+
+.interpretation-guide {
+  background-color: #16213e;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.interpretation-guide h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.guide-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.guide-item {
+  padding: 12px;
+  background-color: #1a1a2e;
+  border-radius: 6px;
+  border-left: 3px solid #4a9eff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.guide-item.warning {
+  border-left-color: #ffa500;
+  background-color: #2a2a1e;
+}
+
+.guide-item strong {
+  color: #4a9eff;
+}
+
+.guide-item.warning strong {
+  color: #ffa500;
+}
+
+.prediction-reasoning {
+  background-color: #16213e;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.prediction-reasoning h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.signal-summary {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.signal-count {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.signal-count.bullish {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+.signal-count.neutral {
+  background-color: rgba(255, 165, 0, 0.2);
+  color: #ffa500;
+  border: 1px solid #ffa500;
+}
+
+.signal-count.bearish {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #f44336;
+  border: 1px solid #f44336;
+}
+
+.composite-score {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.score-explanation {
+  font-size: 13px;
+  color: #8b8b9a;
+  margin-left: 8px;
+}
